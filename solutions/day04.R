@@ -4,6 +4,7 @@
 # To find the indexes of the diagonal lines I use a sequence function.
 # Then I turn the matrix by 90 degrees, 3 more times and do the same. The only thing you have to take into account is to not count the middle diagonals double
 # to prevent that I use lines <- c(n, n, n - 1, n - 1) but this could probably be a bit more elegant.
+# For star 2 I search for all the A's and check the corner letters. Refactor it a couple of times and Simsalabim there's your code.
 
 input <- readLines("input04.txt")
 n     <- length(input)
