@@ -1,3 +1,10 @@
+# Today I wanted to do it different from the straightforward hardcoded stuff (at least star 1).
+# For star 1 the horizontal and vertical ones are simple regex. I make a matrix of all the separated characters and paste the rows and cols, and then search XMAS or SAMX.
+# For the diagonals I paste the top left diagonal lines (starting from at least 4 characters long) to the center (the longest diagonal from bottom left to top right).
+# To find the indexes of the diagonal lines I use a sequence function.
+# Then I turn the matrix by 90 degrees, 3 more times and do the same. The only thing you have to take into account is to not count the middle diagonals double
+# to prevent that I use lines <- c(n, n, n - 1, n - 1) but this could probably be a bit more elegant.
+
 input <- readLines("input04.txt")
 n     <- length(input)
 mt    <- matrix(unlist(strsplit(input, "")), nrow = n, byrow = T)
