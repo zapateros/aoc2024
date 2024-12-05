@@ -1,4 +1,4 @@
-# Today I wanted to do it different from the straightforward hardcoded stuff (at least star 1).
+# Today I wanted to do it different from the straightforward hardcoded stuff (at least for star 1).
 # For star 1 the horizontal and vertical ones are simple regex. I make a matrix of all the separated characters and paste the rows and cols, and then search XMAS or SAMX.
 # For the diagonals I paste the top left diagonal lines (starting from at least 4 characters long) to the center (the longest diagonal from bottom left to top right).
 # To find the indexes of the diagonal lines I use a sequence function.
